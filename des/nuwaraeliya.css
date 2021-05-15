@@ -1,0 +1,68 @@
+
+	
+	.Nuwara_body{
+	background : #283149;
+	padding : 20px;}
+
+.nuwaraeliya_main_div{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px;
+    padding: 35px;
+    margin-top: 55px;
+}
+	
+	#Nuwara_intro{
+	font-family :Levenim MT;
+	font-size: 0.9em;
+	color:#dbedf3;}
+	
+	#N_logo {
+	width : 400px;
+	height : 250px;
+	margin :-90px -20px 0px 0px;
+	float : right;}
+	
+	#Nuwara_topic{
+	color : #00818a;
+	font-family: "Lobster", serif;
+	font-size : 3em;
+	}
+	
+	.Nuwara_subtop{
+	font-size:1.2em;
+	font-family :Forte;
+	color:#dbedf3;
+	}
+	
+	#Nuwara{
+	font-size:0.9em;
+	font-family :Levenim MT;
+	color:#dbedf3;}
+	
+	p{
+	font-size:0.7em;
+	font-family :Levenim MT;
+	color:#dbedf3;}	
+	
+	#N_img{
+	float : right;
+	display : inline;
+	height : 300px;
+	border : 5px solid #00818a;
+	}
+	
+	.Nuwara_content{
+	width : 600px;
+	font-family :Levenim MT;
+	font-size: 0.9em;
+	color:#dbedf3;}
+	
+	.Nuwara_div{
+	height :400px;
+	border-bottom : 1px solid black;}
+	
+	#N_footer{
+	font-family : Yu Mincho Light;
+	font-size : 1em;
+	color:#dbedf3;}
+	
