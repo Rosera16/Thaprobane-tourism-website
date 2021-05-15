@@ -1,0 +1,92 @@
+
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+
+.active {background-color:#003d99;}
+
+
+#D_content {
+	width: 1310px;
+	height: 550px;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding-top: 20px;
+	background-color: #283149;
+}
+#D_logo {
+	width : 400px;
+	height : 250px;
+	margin-left : -80px;
+	margin-right : 135px;
+	float : left;
+	margin-top:-100px;}
+
+#D_topic {
+	width : 1130px;
+	height : 200px;
+	opacity : 0.70;	
+	color : #efffbf;
+	font-size : 2.2em;
+	margin-top :70px;
+	margin-left : 100px;
+	margin-bottom : 5px;
+	padding-top : 70px;
+	background-color : #00818a;
+	font-family : Yu Mincho Light;
+}
+
+#D_sub-topic{
+	color : white;
+	font-size : 1.5em;
+	text-align : center;
+	font-family : Yu Mincho Light;
+}
+
+#D_person_detail {
+	float : left;
+	width : 290px;
+	height : 500px;
+	display : inline;
+	margin-bottom : 10px;
+	margin : 0px 5px 0px 25px;
+}
+
+.D_name_role{
+	font-size : 1em;
+	visibility : hidden;
+	text-align : center;
+	background-color : #00818a ;
+	font-family: Yu Mincho Light;
+	border-radius : 5px;
+	width : 300px; 
+	color :white;
+}
+
+.D_picture {
+	width : 300px; 
+	height : 260px;
+	border : 5px solid #00818a ;
+	border-radius : 10px;
+}
+
+#D_detail{
+	float :right ;
+	display:inline;
+}
+
+.D_footer{
+	font-family : Yu Mincho Light;
+	font-size : 1em;
+	width : 1310px;
+	height : 200px;
+	background-color : #283149;
+	padding : 10px;
+	margin-left: 10px;
+}
+
+#D_right{
+	
+	background-color :#00818a  ;
+}
