@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product</title>
+ <link href="WDD_CW_product_trinco.css" rel='stylesheet'>
+	<style>
+	input[type=text],input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	}
+	
+	select{
+	padding: 12px 20px;
+	margin: 8px 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid #ccc;
+	width:70%;
+	}
+	
+	
+	.button_back{
+	float:left;
+	left:10%;
+	background-color: #9fbfdf;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	}
+	
+	.button_basket{
+	float:right;
+	right:10%;
+	background-color: #a3c2c2;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	}
+	
+	</style>
+	<script type="text/javascript">
+	var productName;
+	var prductPrice;
+	var split;
+	var total;
+	var field;
+	var items;
+	var content=localStorage.getItem("Product Name");
+	split= content.split(" ");
+	productName = split[0];
+	productPrice = split[1];
+	function validateForm(){
+		
+	}
+	function check() {
+		 field = document.forms["details"]["name"].value;
+		if (field == "" ) {
+			alert("Name must be filled out");
+			return false;
+			}
+			var letters = /^[A-Z a-z]+$/;
+			if(!field.match(letters))
+			{
+			alert('Please input alphabet characters only');
+			return false;
+			}
+			items = document.getElementById("noOfItems");
+			if (items.value == "") {
+			alert("Please select the number of items !");
+			return false;
+			}else if (items.value == 1){
+			total=productPrice*1;
+			}else if (items.value == 2){
+			total=productPrice*2;
+			}else if (items.value == 3){
+			total=productPrice*3;
+			}else if (items.value == 4){
+			total=productPrice*4;
+			}else if (items.value == 5){
+			total=productPrice*5;
+			}
+		}
+		 
+		function validate(){
+		check();
+		alert("Name:"+ field +"\nProduct:"+ productName+"\nNo of products:"+ items.value+ "\nBill :" + total)
+		} 
+		
+  </script>
+</head>
+<body class="product1_box" >
+		
+		<div>
+			<form autocomplete="off" name="details" class="product_form">
+			<label>Please fill this form to buy product</label>
+			<input type="text" id="name" name="name"  placeholder="Enter your name...." ><br/>
+			<label style="text-align:left;font-size:13px;">No of items:</label>
+			<select id="noOfItems" name="NoOfItems">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			</select><br/>
+			
+		
+			<button id="submit" height='70px' width='70px' class="button_basket" onclick="validate()">Add to basket </button>
+			<a href="file:///C:/Users/Sabeehah%20Sadiq/Documents/WDD%20-CW/products/products.html">
+			<input type="button" id="back" height='70px' width='70px' class="button_back" value="Back to main"></a>
+			</form>
+			
+
+</body>
+</html>

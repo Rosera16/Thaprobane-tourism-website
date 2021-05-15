@@ -1,0 +1,119 @@
+<html>
+<head>
+<link href="WDD_CW_main.css" rel="stylesheet">
+    
+<title>Feedback</title>
+
+    <script>
+        
+        function submit1() {
+            
+            var com = document.forms["myForm"]["comments"].value;
+            
+            if (com == "" || com == null){
+            
+                var x = document.forms["myForm"]["fname"].value;
+                
+                if (x == "" || x == null) {
+                    alert("Name field cannot be left blank");
+                    return false;}
+                
+                else if(document.getElementById('bad').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Bad");}
+
+                else if(document.getElementById('satisfactory').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Satisfactory");} 
+
+                else if(document.getElementById('good').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Good");} 
+
+                else if(document.getElementById('vgood').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Very Good");}
+
+                else {
+                    alert("no radio selected");
+                    return false;}  }
+            
+            else{
+                var x = document.forms["myForm"]["fname"].value;
+                
+                if (x == "" || x == null) {
+                    alert("Name field cannot be left blank");
+                    return false;}
+
+                else if(document.getElementById('bad').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Bad and your comment was "+ com);}
+
+                else if(document.getElementById('satisfactory').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Satisfactory and your comment was "+ com);}
+
+                else if(document.getElementById('good').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Good and your comment was "+com);} 
+
+                else if(document.getElementById('vgood').checked) { 
+                    alert("Dear "+ x + ", Thank you very much for your feedback. You have rated our site as Very Good and your comment was "+com);}
+
+                else {
+                    alert("no radio selected");
+                    return false;}  
+            }
+        }
+    
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    
+</head> 
+    
+    <body class="feedback_body">
+        
+    <style>
+    .active {background-color:#003d99;}
+    </style>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="WDD_CW_home.html">Home                   </a></li>
+            <li><a href="WDD_CW_gallery.html">Gallery    </a></li>
+            <li><a href="WDD_CW_sitemap.html">Sitemap              </a></li>
+            <li><a href="products.html">Products            </a></li>
+            <li><a href="WDD_CW_aboutus.html">About Us           </a></li>
+        <li><a class="active" href="WDD_CW_feedback.html">Feedback</a></li>
+            <li><a href="final_quiz.html">Quiz                   </a></li>
+        </ul> 
+    </div>
+        
+        
+        
+        <div class="feedback_div">
+            <h1>Feedback</h1>
+            
+            <form class="feedback_form" name="myForm" onsubmit="return submit1()" method="post">
+                
+                <input type="text" class="feedback_txt" name="fname" placeholder="Enter Name"><br>
+                <input type="email" class="feedback_txt" id="email" placeholder="Enter Email" ><br>
+                <textarea class="feedback_txt" name="comments" id="comments" placeholder="Enter Message or Comments Here...."></textarea><br>
+                <div class="feedback_radio_div">
+                    <input type="radio" class="feedback_rat" name="rating" id="bad">Bad
+                    <input type="radio" class="feedback_rat" name="rating" id="satisfactory">Satisfactory
+                    <input type="radio" class="feedback_rat" name="rating" id="good">Good
+                    <input type="radio" class="feedback_rat" name="rating" id="vgood">Very Good
+                </div>
+                <input type="submit" class="feedback_btn" value="Submit"> 
+                
+            </form>
+        </div>
+        
+<footer class="home_footer">
+    <p>Developer :<a class="home_footer_link" href="page_developer_pio.html"> Pio Fernando </a></p>
+    <p>Contact :<a class="home_footer_link" href=hedrich.2019433@iit.ac.lk> hedrich.2019433@iit.ac.lk</a></p>
+    <div class="footer_icons">
+        <a href="#"><i style='font-size:24px' class='far'>&#xf0e0;</i></a>
+        <a href="#"><i style='font-size:24px' class='fab'>&#xf09a;</i></a>
+        <a href="#"><i style='font-size:24px' class='fab'>&#xf16d;</i></a>
+        <a href="#"><i style='font-size:24px' class='fab'>&#xf0d5;</i></a>
+    </div>
+</footer>
+    
+    </body>
+</html>

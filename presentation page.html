@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Presentation page</title>
+<style>
+
+#text-block {
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+    top:30%;
+    left: 30%;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb( 28, 40, 51); 
+    background: rgba( 28, 40, 51, 0.5);
+
+}
+#text{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+text-align:left;
+color: white;
+}
+
+body, html {
+  height: 100%;
+}
+
+#backgroundImage {
+  background-image: url("images/presentation_image/srilanka.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+</style>
+<script>
+function changingpage() {
+	location.replace("WDD_CW_home.html")	
+	}
+ var timer = setInterval('changingpage();',4000)
+</script>
+</head>
+<body id="backgroundImage">
+
+<div id="text-block">
+<p style="text-align:center; font-size: 35px;" id="text">Tourism</p>
+<p style="text-align:left; font-size: 20px;" id="text">Group members:</p>
+<ul id="text">
+<li>Marasinghage Hedrich Pio Fernando-2019433</li>
+<li>Danushka Kavinda Hapuarachchi-2019382</li>
+<li>Erangika Roshni Chandrasekaran-2019426</li>
+<li>Fathima Sabeehah Sadiq-2019392</li>
+</ul>
+</div>
+</body>
+</html>

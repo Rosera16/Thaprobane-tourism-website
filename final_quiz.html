@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> QUIZ </title>
+		<link href = "quiz/final_quiz.css"  rel="stylesheet"> 
+		<link href="quiz/WDD_CW_main.css" rel='stylesheet'>
+		<script src = "quiz/final_quiz.js"></script>
+	</head>
+	
+	<body>
+        <style>
+    .active {background-color:#003d99;}
+    </style>
+		<div class="nav">
+			<ul>
+				<li><a href="WDD_CW_home.html">Home                 </a></li>
+				<li><a href="WDD_CW_gallery.html">Gallery </a></li>
+				<li><a href="WDD_CW_sitemap.html">Sitemap           </a></li>
+				<li><a href="products.html">Products         </a></li>
+				<li><a href="WDD_CW_aboutus.html">About Us          </a></li>
+				<li><a href="WDD_CW_feedback.html">Feedback         </a></li>
+				<li><a class="active" href="final_quiz.html">Quiz   </a></li>
+			</ul> 
+		</div>
+		
+		<div id="fontplusOrminus" style="font-size: 1em">
+		
+		<div  id = "Q_topic"><img src ="quiz/Quiz_Images/lionlogo.png" id ="Q_logo">DESTINATION QUIZ</div>
+		
+		<form id = "quiz_q" name = "quiz_q" class="Q_inline">
+		
+			<input type="button" id="Q_start" value="Start!" onclick="Start()" />
+			
+			<div id="Q_Count_time" ></div>
+			
+			<p class = "questions" > 1) What is Nuwara Eliya also known as ? (2 marks)</p>
+			<input type = "radio" id = 1  class="Q_dis" name = "question1" value="correct" disabled>(A) Mini London of SriLanka<br>
+			<input type = "radio" id = 2  class="Q_dis" name = "question1" value="wrong"   disabled>(B) Little England of Srilanka<br>
+			<input type = "radio" id = 3  class="Q_dis" name = "question1" value="wrong"   disabled>(C) Little Malaysia of Srilanka<br>
+			<input type = "radio" id = 4  class="Q_dis" name = "question1" value="wrong"   disabled>(D) None of the above<br>
+			<hr>
+			<p class = "questions" > 2) What is Nuwara Eliya well known for ? (2 marks)</p>
+			<input type = "radio" id = 5  class="Q_dis" name = "question2" value="wrong"   disabled>(A) For it's neat environment<br>
+			<input type = "radio" id = 6  class="Q_dis" name = "question2" value="wrong"   disabled>(B) For it's bad tea manufacturing  process<br>
+			<input type = "radio" id = 7  class="Q_dis" name = "question2" value="wrong"   disabled>(C) For it's extreme cold climate<br>
+			<input type = "radio" id = 8  class="Q_dis" name = "question2" value="correct" disabled>(D) For it's great scenic beauty<br>
+			<hr>
+			<p class = "questions" > 3) The moon plain consists of ? (2 marks)</p>
+			<input type = "radio" id = 9  class="Q_dis" name = "question3" value="wrong"   disabled>(A) A huge area of plain land with no grass<br>
+			<input type = "radio" id = 10 class="Q_dis" name = "question3" value="correct" disabled>(B) A huge area of plain land with green grass<br>
+			<input type = "radio" id = 11 class="Q_dis" name = "question3" value="wrong"   disabled>(C) A beach and a plain land near by it<br>
+			<input type = "radio" id = 12 class="Q_dis" name = "question3" value="wrong"   disabled>(D) A hotel with a swimming pool<br>
+			<hr>
+			<p class = "questions" > 4) Victoria Park is known as ? (2 marks)</p>
+			<input type = "radio" id = 13 class="Q_dis" name = "question4" value="wrong"   disabled>(A) The best maintained park all over the world <br>
+			<input type = "radio" id = 14 class="Q_dis" name = "question4" value="wrong"   disabled>(B) The best maintained park in Sri Lanka<br>
+			<input type = "radio" id = 15 class="Q_dis" name = "question4" value="correct" disabled>(C) The best maintained park in South Asia<br>
+			<input type = "radio" id = 16 class="Q_dis" name = "question5" value="wrong"   disabled>(D) The best maintained park in Island wide<br>
+			<hr>
+			<p class = "questions" > 5) The Pedro Tea Estate is a great place to check out on ? (2 marks)</p>
+			<input type = "radio" id = 17 class="Q_dis" name = "question5" value="wrong"   disabled>(A) How the process is executed in manufacturing a cup of coffee only.<br>
+			<input type = "radio" id = 18 class="Q_dis" name = "question5" value="correct" disabled>(B) How the process is executed in manufacturing a cup of tea.<br>
+			<input type = "radio" id = 19 class="Q_dis" name = "question5" value="wrong"   disabled>(C) How process is executed in manufacturing a cup of tea estate.<br>
+			<input type = "radio" id = 20 class="Q_dis" name = "question5" value="wrong"   disabled>(D) How the process is executed in manufacturing a cup of juice.<br>
+			<hr>
+			<p class = "questions" > 6) Which place is considered as an educational place for kids ? (2 marks)</p>
+			<input type = "radio" id = 21 class="Q_dis" name = "question6" value="wrong"   disabled>(A) Victoria park<br>
+			<input type = "radio" id = 22 class="Q_dis" name = "question6" value="wrong"   disabled>(B) Gregory lake<br>
+			<input type = "radio" id = 23 class="Q_dis" name = "question6" value="correct" disabled>(C) Pedro Tea estate<br>
+			<input type = "radio" id = 24 class="Q_dis" name = "question6" value="wrong"   disabled>(D) World's end<br>
+			<hr>
+			<p class = "questions" > 7) Does Gregory Lake consist  of extra activities ? If so what are they ? (2 marks)</p>
+			<input type = "radio" id = 25 class="Q_dis" name = "question7" value="wrong"   disabled>(A) They do have extra activities , they are - speed boats and car rides.<br>
+			<input type = "radio" id = 26 class="Q_dis" name = "question7" value="wrong"   disabled>(B) They do have extra activities , they are - car racing and bike racing.<br>
+			<input type = "radio" id = 27 class="Q_dis" name = "question7" value="wrong"   disabled>(C) They don't have extra activities.<br>
+			<input type = "radio" id = 28 class="Q_dis" name = "question7" value="correct" disabled>(D) They do have extra activities , they are - paddle boats , jet ski rides, and horse riding.<br>
+			<hr>
+			<p class = "questions" > 8) Horton Plains National Park is situated? (2 marks)</p>
+			<input type = "radio" id = 29 class="Q_dis" name = "question8" value="correct" disabled>(A) 30km outside of Nuwara  Eliya<br>
+			<input type = "radio" id = 30 class="Q_dis" name = "question8" value="wrong"   disabled>(B) 30km inside of Nuwara  Eliya <br>
+			<input type = "radio" id = 31 class="Q_dis" name = "question8" value="wrong"   disabled>(C) 60km outside of Nuwara  Eliya<br>
+			<input type = "radio" id = 32 class="Q_dis" name = "question8" value="wrong"   disabled>(D) None of the above.<br>
+			<hr>
+			
+			<p class = "questions" > 9) Would visiting Horton plains cost a lot ? (2 marks)</p>
+			<input type = "radio" id = 33 class="Q_dis" name = "question9" value="wrong"   disabled>(A) Yes but less than $40<br>
+			<input type = "radio" id = 34 class="Q_dis" name = "question9" value="wrong"   disabled>(B) May be<br>
+			<input type = "radio" id = 35 class="Q_dis" name = "question9" value="correct" disabled>(C) Yes ,$47 and upwards<br>
+			<input type = "radio" id = 36 class="Q_dis" name = "question9" value="wrong"   disabled>(D) No<br>
+			<hr>
+			
+			<p class = "questions" > 10) Which place out of the ones listed below  is preferred to go for a hike ? (2 marks)</p>
+			<input type = "radio" id = 37 class="Q_dis" name = "question10" value="correct" disabled>(A) World's End<br>
+			<input type = "radio" id = 38 class="Q_dis" name = "question10" value="wrong"   disabled>(B) Moon Plains<br>
+			<input type = "radio" id = 39 class="Q_dis" name = "question10" value="wrong"   disabled>(C) Gregory Lake<br>
+			<input type = "radio" id = 40 class="Q_dis" name = "question10" value="wrong"   disabled>(D) None of the above<br>
+			<hr>
+			<input type="button" id = "Q_done" value = "Done!" onclick = "Done()" disabled>
+			
+		</form>
+		
+		
+		<div id ="Q_done_clicked" class="Q_inline">
+		
+			<p id = "tot_score"></p>
+			<p id = "comments"></p>
+			<p id = "noof_correct"></p>
+			<p id = "time"></p>
+			<div id = "Q_correct_ans">
+				<p>CHOICE SUMMARY</p>
+				<p id = "ques1"></p>
+				<p id = "ques2"></p>
+				<p id = "ques3"></p>
+				<p id = "ques4"></p>
+				<p id = "ques5"></p>
+				<p id = "ques6"></p>
+				<p id = "ques7"></p>
+				<p id = "ques8"></p>
+				<p id = "ques9"></p>
+				<p id = "ques10"></p>
+			</div>
+			
+		</div>	
+		</div> 
+		<a href="javascript:increaseFontSize('fontplusOrminus');"><input type=button value="+" id = "Q_right"></a>
+		<a href="javascript:decreaseFontSize('fontplusOrminus');"><input type=button value="-" id = "Q_right"></a>
+		
+		<footer>
+			<p id = "Q_footer"> Developer : Erangika Roshni Chandrasekaran </p>
+			<p id = "Q_footer"> Contact : <a href="mailto:roshni.2019426@iit.ac.lk">roshni.2019426@iit.ac.lk</a></p>
+			<p id = "Q_footer"> Editors page : <a href = "page_developer_roshni.html">page_developer_roshni </a></p>
+		</footer>
+	</body>
+	
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trincomalee</title>
+	<link href="WDD_CW_main.css" rel='stylesheet'>
+	<link href="WDD_CW_product_trinco.css" rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+	<style>
+       .active {background-color:#003d99;}
+    </style>
+		<script>
+		
+function decreaseFontSize() {
+   var p = document.getElementsByTagName('p');
+   var h3= document.getElementsByTagName('h3')
+   var h1= document.getElementsByTagName('h1')
+   for(i=0;i<p.length;i++) {
+      if(p[i].style.fontSize) {
+         var s = parseInt(p[i].style.fontSize.replace("px",""));
+      } else {
+         var s = 20;
+      }
+      if(s!=min) {
+         s -= 1;
+      }
+      p[i].style.fontSize = s+"px"
+   } 
+	
+	for(i=0;i<h3.length;i++) {
+      if(h3[i].style.fontSize) {
+         var x = parseInt(h3[i].style.fontSize.replace("px",""));
+      } else {
+         var x = 20;
+      }
+      if(x!=min) {
+         x -= 1;
+      }
+      h3[i].style.fontSize = x+"px"
+   }
+	
+	for(i=0;i<h1.length;i++) {
+      if(h1[i].style.fontSize) {
+         var y = parseInt(h1[i].style.fontSize.replace("px",""));
+      } else {
+         var y = 20;
+      }
+      if(y!=min) {
+         y -= 1;
+      }
+      h1[i].style.fontSize = y+"px"
+   } 
+
+}
+var min=8;
+var max=80;
+function increaseFontSize() {
+   var p = document.getElementsByTagName('p');
+   var h3 = document.getElementsByTagName('h3');
+   var h1 = document.getElementsByTagName('h1');
+   for(i=0;i<p.length;i++) {
+      if(p[i].style.fontSize) {
+         var s = parseInt(p[i].style.fontSize.replace("px",""));
+      } else {
+         var s = 20;
+      }
+      if(s!=max) {
+         s += 1;
+      }
+      p[i].style.fontSize = s+"px"
+   }
+   
+   for(i=0;i<h3.length;i++) {
+      if(h3[i].style.fontSize) {
+         var x = parseInt(h3[i].style.fontSize.replace("px",""));
+      } else {
+         var x = 20;
+      }
+      if(x!=max) {
+         x += 1;
+      }
+      h3[i].style.fontSize = x+"px"
+   }
+   
+   for(i=0;i<h1.length;i++) {
+      if(h1[i].style.fontSize) {
+         var y = parseInt(h1[i].style.fontSize.replace("px",""));
+      } else {
+         var y = 50;
+      }
+      if(y!=max) {
+         y += 1;
+      }
+      h1[i].style.fontSize = y+"px"
+   }
+}
+		</script>
+		
+</head>
+<body class="trinco_body">
+    
+    <style>
+       .active {background-color:#003d99;}
+    </style>
+<div class="nav">
+            <ul>
+                <li><a href="WDD_CW_home.html">Home                                 </a></li>
+                <li><a class="active" href="WDD_CW_gallery.html">Gallery  </a></li>
+                <li><a href="WDD_CW_sitemap.html">Sitemap    </a></li>
+                <li><a href="products.html">Products    </a></li>
+                <li><a href="WDD_CW_aboutus.html">About Us    </a></li>
+                <li><a href="WDD_CW_feedback.html">Feedback    </a></li>
+                <li><a href="final_quiz.html">Quiz         </a></li>
+            </ul> 
+        </div>
+    
+    
+<div class="trinco_main_div">
+<h1 id="trinco_heading">Trincomalee</h1>
+
+	<div class="trinco_left_div" id="trinco1">
+		<img class="trinco_left_img" src="images/trinco_images/trinco4.jpg" height="320" width="550">
+			<div class="trinco_left_div_p"  >
+				<p>Trincomalee is one of the historical towns on the east coast of Sri Lanka , offers beautiful white sand and is one of the best  out of all beaches.</p>
+				<p>The east coast is upcoming and way more quiet than south, which is a perfect reason to plan a visit for tourists and locals. </p>
+				<p>Trincomalee has one of the world's finest natural harbors, accompanied with a deep water port which has been the reason for several attacks in the past.</p>
+				<p>It has housed some of the finest beaches in its ambit such as Nilaveli, Uppuveli and Pigeon Island and ideal location for Whale watching. </p>
+				<p> Rarely a  Blue Whale would be in sight near Swami Rock which is considered to be the greatest vantage point. </p>
+
+			</div>
+	</div>
+ 
+	<div class="trinco_right_div" id="trinco2">
+		<img class="trinco_right_img" src="images/trinco_images/nilaveli-beach.jpg" height='400px' width='500px'>
+			<div class="trinco_right_div_p" >
+				<h3 >Nilaveli Beach</h3>
+				<p>Nilaveli, a town in the coast of Sri Lanka, is a very well-known place amongst the tourists, for those who frequently visit the pearl of the Indian Ocean.</p>
+				<p>The area gets its name from it’s tamil origin, who are considered to be amongst the first settlers in the area, dating back to the 10th Century.</p>
+				<p>The city is still largely a Tamil populated city, and was one of the most affected cities by the 2004 tsunami.</p>
+				<p>This picturesque town just 16 Km away from the city of Trincomalee is considered a tourist attraction,as it has a lot of unique activities within its city limits.</p>
+				<p>Nilaveli Beach is one of the finest beaches in Sri lanka, the pearly sands, the breath-taking coastline this is a tangible proof of serenity in our island.In the weekend, locals from all over the country also like to visit Nilaveli because of its white sand.</p>
+				<p>This is a place where most people come to take a break to enjoy with their close ones. </p>
+			</div>
+	</div>
+	
+	<div class="trinco_left_div" id="trinco3">
+		<img  class="trinco_left_img" src="images/trinco_images/pigeonisland1.jpg" height='400px' width='550px'>
+			<div class="trinco_left_div_p" >
+				<h3>Pigeon Island</h3>
+				<p>The Pigeon Island, floating in the great blue 1km offshore contains over 100 species of stunning coral and is teeming with over 300 species of colourful reef fish,
+				including the Black Tip Reef Shark, a variety of rays, and Sri Lanka’s iconic sea turtle.</p>
+				<p>The coral reef is about  200m long and 100m in width approximately.</p>
+				<p>And It is the base for hundreds of sea creatures living around.</p>
+				<p>With its powdery white sands and glittering coral gardens, tantalises with possibilities,
+				<p>The rocky outcrops and the islets is a breeding and feeding ground for over 300 species of coral reef fish keeping the colorful underwater symphony alive.</p>
+				<p>It is considered as an ideal spot for snorkeling since the reef is shallow.</p>
+
+
+			</div>
+	</div>
+	
+	<div class="trinco_right_div" id="trinco4">
+		<img class="trinco_right_img" src="images/trinco_images/whale2.jpg" height='300px' width='500px'>
+			<div class="trinco_right_div_p" >
+				<h3>Whale watching</h3>
+				<p>Whale and dolphin watching in Sri Lanka is one of the island’s biggest seasonal attractions.</p>
+				<p>The waters off the coast of Jungle Beach offer some of the best spots in the world to catch a glimpse of the world’s largest ever mammal known as the Blue Whale.</p>
+				<p> Furthermore, the deepest diving whales and the largest predators on Earth,the Sperm Whales are also plentiful in these parts and are often spotted traveling in super pods of 40 or more. </p>
+				<p>These bountiful waters are also feeding grounds for large numbers of Spinner Dolphins who are known for their joyous acrobatic displays.</p>
+
+			</div>
+	</div>
+	
+	<div class="trinco_left_div" id="trinco5">
+		<img class="trinco_left_img" src="images/trinco_images/7springs.jpg" height='330px' width='550px'>
+			<div class="trinco_left_div_p" >
+				<h3>Kanniya 7 wells</h3>
+				<p>Located at  Anuradhapura - Trincomalee road, the Kanniya hot water springs are a natural marvel that are intertwined with the myth and legends of Sri Lanka according to  the locals in the area. </p>
+				<p>There are seven wells each, about 3 - 4 feet deep and all are built in a square shape.</p>
+				<p>Hundreds of travellers both locals and tourists,
+				Due to its popularity, the  kanniya springs are crowded during the day which makes it difficult for everyone to enjoy the beauty and spirituality of the surroundings and experience.</p>
+				<p>Travellers who are  determined to soothe their bodies and mind ,come here to experience it by the warmth of the natural spring water from the 7 wells of kanniya.</p>
+			</div>
+	</div>
+    
+	
+	<div class="button_footer">
+	<a href="javascript:increaseFontSize();" ><input type=button value="+" class="button_plusOrminus"></a>
+	<a href="javascript:decreaseFontSize();"><input type=button value="-" class="button_plusOrminus"></a>
+	</div>
+</div>
+
+</body>
+</html>

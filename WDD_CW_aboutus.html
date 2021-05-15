@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> DETAILS </title>
+		<link href = "aboutus/WDD_CW_aboutus.css"  rel="stylesheet"> 
+		<link href="aboutus/WDD_CW_main.css" rel='stylesheet'>
+		<script src = "aboutus/WDD_CW_aboutus.js"></script>
+	</head>
+	
+	<body background = "aboutus/Detail_Images/green.jpg" >
+        <style>
+    .active {background-color:#003d99;}
+    </style>
+		<div class="nav">
+        <ul>
+            <li><a href="WDD_CW_home.html">Home                         </a></li>
+            <li><a href="WDD_CW_gallery.html">Gallery        </a></li>
+
+            <li><a href="WDD_CW_sitemap.html">Sitemap                   </a></li>
+            <li><a href="products.html">Products                 </a></li>
+            <li><a class="active" href="WDD_CW_aboutus.html">About Us   </a></li>
+            <li><a href="WDD_CW_feedback.html">Feedback                 </a></li>
+            <li><a href="final_quiz.html">Quiz                          </a></li>
+        </ul> 
+		</div>
+		
+		<div id="fontplusOrminus" style="font-size: 1em">
+		
+			<div id = "D_topic"><img src ="aboutus/Detail_Images/lionlogo.png" id ="D_logo">ABOUT US</div>
+			
+			<div id = "D_content">
+			
+				<p id = "D_sub-topic">- WHO WE ARE -</p>
+				
+				<div id = "D_person_detail">	
+					<div class = "D_picture">
+					<img src = "aboutus/Detail_Images/sabeeha.jpeg" width = "290" height = "250" onmouseover = "over1()" onmouseout = "out1()">
+					</div>	
+					
+					<div class = "D_name_role" id = "D_student_1" >
+					<p><b>Name: Sabeeha Sadiq</b></p>
+					<p><b>Role: Student 1</b> </p>
+					</div>
+				</div>
+				
+				<div id = "D_person_detail">
+					<div class = "D_picture">
+					<img src = "aboutus/Detail_Images/pio.jpg" width = "290" height = "250" onmouseover = "over2()" onmouseout = "out2()">
+					</div>
+					
+					<div class = "D_name_role" id = "D_student_2">
+					<p><b>Name: Pio Fernando</b></p>
+					<p><b>Role: Student 2</b></p>
+					</div>
+				</div>
+				
+				<div id = "D_person_detail">
+					<div class = "D_picture">
+					<img src = "aboutus/Detail_Images/roshni.jpg" width = "290" height = "250" onmouseover = "over3()" onmouseout = "out3()">
+					</div>
+					
+					<div class = "D_name_role" id = "D_student_3">
+					<p><b>Name: Roshni Chandrasekaran</b></p>
+					<p><b>Role: Student 3</b></p>
+					</div>
+				</div>
+				
+				<div id = "D_person_detail">
+					<div class = "D_picture">
+					<img src = "aboutus/Detail_Images/kavinda.jpg" width = "290" height = "250" onmouseover = "over4()" onmouseout = "out4()">
+					</div>
+					
+					<div class = "D_name_role" id = "D_student_4">
+					<p><b>Name: Kavinda</b></p>
+					<p><b>Role: Student 4</b></p>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<a href="javascript:increaseFontSize('fontplusOrminus');"><input type=button value="+" id = "D_right"></a>
+		<a href="javascript:decreaseFontSize('fontplusOrminus');"><input type=button value="-" id = "D_right"></a>
+		
+		<footer class ="D_footer">
+			<p > Developer : Erangika Roshni Chandrasekaran </p>
+			<p > Contact : <a href="mailto:roshni.2019426@iit.ac.lk">roshni.2019426@iit.ac.lk</a></p>
+			<p > Editors page : <a href = "page_developer_roshni.html">page_developer_roshni </a></p>
+		</footer>
+	</body>
+	
+</html>
